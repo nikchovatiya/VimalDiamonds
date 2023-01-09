@@ -36,7 +36,8 @@ class LoginController extends Controller
                     if (Auth::attempt($credentials)) {
                         Session::put([
                             'firstname'=>$user_details->firstname,
-                            'lastname'=>$user_details->lastname                                
+                            'lastname'=>$user_details->lastname ,
+                            'session_id'=> Session::getId(),
                         ]);
                         return redirect()->route('dashboard')->with('data',$user_details);
                     } 

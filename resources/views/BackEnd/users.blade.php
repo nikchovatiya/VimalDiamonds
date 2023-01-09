@@ -8,13 +8,20 @@
         <div class="card">
             <div class="card-body" style="overflow:auto;">
                 <h5 class="card-title"></h5>
+                @if(session()->get('error'))
+                <div class="alert alert-danger">
+                    <span>Link expired.</span>
+                </div><br />
+                @endif
+
+
                 @if(session()->get('success'))
                 <div class="alert alert-success">
                     @if (session()->get('success')['verified'] == 1)
 
-                    {{ session()->get('success')['email'] }} has been activated.
+                    <span>{{ session()->get('success')['email'] }} has been activated.</span>
                     @else
-                    {{ session()->get('success')['email'] }} has been Deactivated.
+                    <span> {{ session()->get('success')['email'] }} has been Deactivated.</span>
                     @endif
                 </div><br />
                 @endif
@@ -38,13 +45,13 @@
                             @if ($user->verified == 1)
                             <td>
                                 <button class="btn" style="display:block; margin: auto;">
-                                <a href="{{route('user_verified',[$user->verified,encrypt($user->id)])}}"> <i class="bi bi-check-all"></i></a>
+                                    <a href="{{route('user_verified',[encrypt($user->verified),encrypt($user->id),Session::get('session_id')])}}"> <i class="bi bi-check-all"></i></a>
                                 </button>
                             </td>
                             @else
                             <td>
                                 <button class="btn" style="display:block; margin: auto;">
-                                   <a href="{{route('user_verified',[$user->verified,encrypt($user->id)])}}"> <i class="bi bi-x-circle-fill"></i></a>
+                                    <a href="{{route('user_verified',[encrypt($user->verified),encrypt($user->id),Session::get('session_id')])}}"> <i class="bi bi-x-circle-fill"></i></a>
                                 </button>
                             </td>
                             @endif
