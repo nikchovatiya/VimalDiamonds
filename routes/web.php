@@ -25,6 +25,7 @@ Route::get('/', [SetupController::class, 'ShowSettingsInFront']);
 
 Route::post('/login', [LoginController::class, 'login']);
 Route::get('/register', [SetupController::class, 'ShowRegisterPage']);
+Route::get('/verification', [SetupController::class, 'ShowVerificationPage']);
 Route::post('/register', [LoginController::class, 'register']);
 
 Route::group(['middleware' => ['prevent-back-history']], function () {
@@ -40,3 +41,5 @@ Route::group(['middleware' => ['prevent-back-history']], function () {
         })->name('dashboard');
     });
 });
+
+
