@@ -17,7 +17,8 @@ class AdminController extends Controller
 
     public function user_active($verified,$id)
     {
-        $model = User::find($id);
+        $ori_id=decrypt($id);
+        $model = User::find($ori_id);
         if($verified==1)
         {
             $model->verified = 0;

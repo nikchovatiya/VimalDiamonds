@@ -38,13 +38,13 @@
                             @if ($user->verified == 1)
                             <td>
                                 <button class="btn" style="display:block; margin: auto;">
-                                <a href="{{url('/admin/users/')}}/{{$user->verified}}/{{$user->id}}"> <i class="bi bi-check-all"></i></a>
+                                <a href="{{route('user_verified',[$user->verified,encrypt($user->id)])}}"> <i class="bi bi-check-all"></i></a>
                                 </button>
                             </td>
                             @else
                             <td>
                                 <button class="btn" style="display:block; margin: auto;">
-                                   <a href="{{url('/admin/users/')}}/{{$user->verified}}/{{$user->id}}"> <i class="bi bi-x-circle-fill"></i></a>
+                                   <a href="{{route('user_verified',[$user->verified,encrypt($user->id)])}}"> <i class="bi bi-x-circle-fill"></i></a>
                                 </button>
                             </td>
                             @endif
