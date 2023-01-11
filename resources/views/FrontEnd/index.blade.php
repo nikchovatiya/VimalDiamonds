@@ -94,7 +94,7 @@
                         <br />
                         <h4 class="mb-3" style="text-align: center;">Round</h4>
                         <!--  <p style="text-align: justify;">The round cut is, by far, the most preferred diamond shape, the cut is also the most optically brilliant because of its 360-degree symmetrical shape. A round brilliant is a great choice if you want the most sparkle and the most enduring classic shape. The round silhouette works with almost every mounting, from classic solitaires to the most avant-garde designs.</p> -->
-                        <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        <a class="small fw-medium" href="{{url('/education')}}">Read More<i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -108,7 +108,7 @@
                         <br />
                         <h4 class="mb-3" style="text-align: center;">Cushion</h4>
                         <!-- <p style="text-align: justify;">The cushion brilliant cut is an elegantly shaped diamond that has recently gained popularity because of the heightened demand for vintage-styled jewelry. Combining the cut characteristics of both the round and the oval, the Cushion Cut's rounded corners and larger facets increase this special diamond's brilliance.</p> -->
-                        <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        <a class="small fw-medium" href="{{url('/education')}}">Read More<i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -122,7 +122,7 @@
                         <br />
                         <h4 class="mb-3" style="text-align: center;">Oval</h4>
                         <!--  <p style="text-align: justify;">The shape of an oval diamond is recognizable, as its shape is defined by its name. The sparkle of the brilliant cut combined with the elongated shape of the oval makes it the perfect shape to accentuate long, slender fingers or at least give the appearance of longer, slender fingers.</p> -->
-                        <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        <a class="small fw-medium" href="{{url('/education')}}">Read More<i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -136,7 +136,7 @@
                         <br />
                         <h4 class="mb-3" style="text-align: center;">Radiant</h4>
                         <!--  <p style="text-align: justify;">The shape of an oval diamond is recognizable, as its shape is defined by its name. The sparkle of the brilliant cut combined with the elongated shape of the oval makes it the perfect shape to accentuate long, slender fingers or at least give the appearance of longer, slender fingers.</p> -->
-                        <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        <a class="small fw-medium" href="{{url('/education')}}">Read More<i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -150,7 +150,7 @@
                         <br />
                         <h4 class="mb-3" style="text-align: center;">Marquise</h4>
                         <!--  <p style="text-align: justify;">The shape of an oval diamond is recognizable, as its shape is defined by its name. The sparkle of the brilliant cut combined with the elongated shape of the oval makes it the perfect shape to accentuate long, slender fingers or at least give the appearance of longer, slender fingers.</p> -->
-                        <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        <a class="small fw-medium" href="{{url('/education')}}">Read More<i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -164,7 +164,7 @@
                         <br />
                         <h4 class="mb-3" style="text-align: center;">Pear</h4>
                         <!--  <p style="text-align: justify;">The shape of an oval diamond is recognizable, as its shape is defined by its name. The sparkle of the brilliant cut combined with the elongated shape of the oval makes it the perfect shape to accentuate long, slender fingers or at least give the appearance of longer, slender fingers.</p> -->
-                        <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        <a class="small fw-medium" href="{{url('/education')}}">Read More<i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>

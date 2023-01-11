@@ -47,7 +47,7 @@
        <div class="collapse navbar-collapse" id="navbarCollapse">
            <div class="navbar-nav ms-auto p-4 p-lg-0">
                <a href="{{url('/')}}" class="nav-item nav-link active">Home</a>
-               <a href="#" class="nav-item nav-link">About Us</a>
+               <a href="{{url('/about')}}" class="nav-item nav-link">About Us</a>
                <div class="nav-item dropdown">
                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Inventory</a>
                    <div class="dropdown-menu bg-light m-0">
@@ -59,8 +59,8 @@
                    </div>
                </div>
 
-               <a href="#" class="nav-item nav-link">Education</a>
-               <a href="#" class="nav-item nav-link">Contact</a>
+               <a href="{{url('/education')}}" class="nav-item nav-link">Education</a>
+               <a href="{{url('/contact')}}" class="nav-item nav-link">Contact</a>
            </div>
            <a href="{{url('/login')}}" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Login<i class="fa fa-arrow-right ms-3"></i></a>
        </div>
