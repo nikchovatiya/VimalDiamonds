@@ -28,6 +28,11 @@ Route::get('/register', [SetupController::class, 'ShowRegisterPage']);
 Route::get('/verification', [SetupController::class, 'ShowVerificationPage']);
 Route::post('/register', [LoginController::class, 'register']);
 
+
+Route::get('/about', [SetupController::class,'ShowAboutPage']);
+Route::get('/education', [SetupController::class,'ShowEducationPage']);
+Route::get('/contact', [SetupController::class,'ShowContactPage']);
+
 Route::group(['middleware' => ['prevent-back-history']], function () {
     Route::get('/login', [LoginController::class, 'ShowLoginPage'])->name('login');
     Route::group(['middleware' => ['auth']], function () {

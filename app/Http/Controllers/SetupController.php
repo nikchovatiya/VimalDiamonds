@@ -57,6 +57,20 @@ class SetupController extends Controller
         $data = DB::table('setups')->latest()->first();
         return view('Auth\verification', ['data' => $data]);
     }
-
+    public function ShowAboutPage() 
+    {
+$data = DB::table('setups')->latest()->first();
+return view('FrontEnd/about', ['data' => $data]);
+}
+public function ShowEducationPage() 
+{
+$data = DB::table('setups')->latest()->first();
+return view('FrontEnd/education', ['data' => $data]);
+}
+public function ShowContactPage() 
+{
+$data = DB::table('setups')->latest()->first();
+return view('FrontEnd/contact', ['data' => $data]);
+}
 
 }
