@@ -72,5 +72,11 @@ public function ShowContactPage()
 $data = DB::table('setups')->latest()->first();
 return view('FrontEnd/contact', ['data' => $data]);
 }
+public function ShowJewelryPage() 
+{
+$data = DB::table('setups')->latest()->first();
+return view('FrontEnd/jewelry', ['data' => $data]);
+}
+
 
 }

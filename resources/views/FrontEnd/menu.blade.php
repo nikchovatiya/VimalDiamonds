@@ -58,7 +58,7 @@
                        <a href="#" class="dropdown-item">Radiant</a>
                    </div>
                </div>
-
+               <a href="{{url('/jewelry')}}" class="nav-item nav-link">Jewelry</a>
                <a href="{{url('/education')}}" class="nav-item nav-link">Education</a>
                <a href="{{url('/contact')}}" class="nav-item nav-link">Contact</a>
            </div>

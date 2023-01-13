@@ -32,6 +32,7 @@ Route::post('/register', [LoginController::class, 'register']);
 Route::get('/about', [SetupController::class,'ShowAboutPage']);
 Route::get('/education', [SetupController::class,'ShowEducationPage']);
 Route::get('/contact', [SetupController::class,'ShowContactPage']);
+Route::get('/jewelry', [SetupController::class,'ShowJewelryPage']);
 
 Route::group(['middleware' => ['prevent-back-history']], function () {
     Route::get('/login', [LoginController::class, 'ShowLoginPage'])->name('login');
