@@ -77,6 +77,11 @@ public function ShowJewelryPage()
 $data = DB::table('setups')->latest()->first();
 return view('FrontEnd/jewelry', ['data' => $data]);
 }
+public function ShowTermsConditionPage() 
+{
+$data = DB::table('setups')->latest()->first();
+return view('FrontEnd/termscondition', ['data' => $data]);
+}
 
 
 }
