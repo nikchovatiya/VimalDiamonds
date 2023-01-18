@@ -20,7 +20,7 @@
                     <a class="btn btn-link" href="{{url('/about')}}">About Us</a>                    
                     <a class="btn btn-link" href="{{url('/education')}}">Education</a>
                     <a class="btn btn-link" href="{{url('/contact')}}">Contact Us</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="{{url('/termscondition')}}">Terms & Condition</a>
                
                 </div>
 <!--                 <div class="col-lg-3 col-md-6">
@@ -48,7 +48,7 @@
                 </div> -->
                 <div class="col-lg-4 col-md-6">
                     <h5 class="text-white mb-4">Newsletter</h5>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <!-- <p>Write to us</p> -->
                     <div class="position-relative mx-auto" style="max-width: 400px;">
                         <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
                         <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>

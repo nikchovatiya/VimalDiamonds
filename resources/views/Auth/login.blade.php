@@ -228,17 +228,17 @@
 </style>
 <div class="wrapper">
   <div class="form-left">
-    <h2 class="text-uppercase" style="color: #ddd;">{{$data->companyname}}</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et molestie ac feugiat sed. Diam volutpat commodo.
-    </p>
-    <p class="text">
-      <span>Sub Head:</span>
-      Vitae auctor eu augudsf ut. Malesuada nunc vel risus commodo viverra. Praesent elementum facilisis leo vel.
-    </p>
-    <div class="form-field">
-      <input type="button" class="account" id="register" value="Register Here">
+    <div class="mt-5">
+      <h2 class="text-uppercase" style="color: #ddd;">{{$data->companyname}}</h2>
+      <p>
+        By creating an account with us, you will be able to purchase precious diamonds and manage your account. Please register with us by filling out the simple form given below.
+      </p>
+
+      <div class="form-field">
+        <input type="button" class="account" id="register" value="Register Here">
+      </div>
     </div>
+
   </div>
   <form class="form-right" method="post" enctype="multipart/form-data" action="/login">
     @csrf

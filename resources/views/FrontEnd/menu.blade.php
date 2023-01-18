@@ -6,14 +6,20 @@
    </div>
    <!-- Spinner End -->
 
-
+<style>
+    .custom_header
+    {
+        font-size: medium;
+        font-weight: 600;
+    }
+</style>
    <!-- Topbar Start -->
-   <div class="container-fluid bg-dark p-0">
-       <div class="row gx-0 d-none d-lg-flex">
+   <div class="container-fluid p-0" style="background-color:#CCCCCC; color:#2A2A69;">
+       <div class="row gx-0 d-none d-lg-flex" style="padding-top:7px; padding-bottom: 7px;">
            <div class="col-lg-7 px-5 text-start">
                <div class="h-100 d-inline-flex align-items-center me-4">
-                   <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                   <small>{{$data->address}}</small>
+                   <large class="fa fa-map-marker-alt text-primary me-2 custom_header"></large>
+                   <large class="custom_header">{{$data->address}}</large>
                </div>
                <!--     <div class="h-100 d-inline-flex align-items-center">
                    <small class="far fa-clock text-primary me-2"></small>
@@ -21,9 +27,9 @@
                </div> -->
            </div>
            <div class="col-lg-5 px-5 text-end">
-               <div class="h-100 d-inline-flex align-items-center me-4">
-                   <small class="fa fa-phone-alt text-primary me-2"></small>
-                   <small>{{$data->mobile}}</small>
+               <div class="h-100 d-inline-flex align-items-center me-4 ">
+                   <large class="fa fa-phone-alt text-primary me-2 custom_header"></large>
+                   <large class="custom_header">{{$data->mobile}}</large>
                </div>
                <div class="h-100 d-inline-flex align-items-center mx-n2">
                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-facebook-f"></i></a>
@@ -51,14 +57,14 @@
                <div class="nav-item dropdown">
                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Inventory</a>
                    <div class="dropdown-menu bg-light m-0">
-                       <a href="#" class="dropdown-item">Round</a>
-                       <a href="#" class="dropdown-item">Cushion</a>
-                       <a href="#" class="dropdown-item">Emerald</a>
+                       <a href="#" class="dropdown-item">Diamonds</a>
+                       <a href="#" class="dropdown-item">Jewelry</a>
+              <!--          <a href="#" class="dropdown-item">Emerald</a>
                        <a href="#" class="dropdown-item">Oval</a>
-                       <a href="#" class="dropdown-item">Radiant</a>
+                       <a href="#" class="dropdown-item">Radiant</a> -->
                    </div>
                </div>
-
+               <a href="{{url('/jewelry')}}" class="nav-item nav-link">Jewelry</a>
                <a href="{{url('/education')}}" class="nav-item nav-link">Education</a>
                <a href="{{url('/contact')}}" class="nav-item nav-link">Contact</a>
            </div>

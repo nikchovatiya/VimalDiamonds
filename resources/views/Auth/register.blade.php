@@ -328,7 +328,7 @@
       </div>
     </div>
     <div class="mb-3">
-      <label class="option">I agree to the <a href="#">Terms and Conditions</a>
+      <label class="option">I agree to the <a href="{{url('/termscondition')}}">Terms and Conditions</a>
         <input type="checkbox" name="checkbox" id="checkbox" class="checkbox" unchecked>
         <span class="checkmark"></span>
         @if($errors->has('checkbox'))
